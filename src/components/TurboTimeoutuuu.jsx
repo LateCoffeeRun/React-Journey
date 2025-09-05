@@ -1,5 +1,6 @@
 import {useTimeoutHookasuu} from "../hooks/timeoutHookasuu.js";
 import {useCallback, useState} from "react";
+import {Button, Stack} from "@mui/material";
 
 export default function TurboTimeoutuuu() {
     const [message, setMessage] = useState("Waiting...");
@@ -16,9 +17,11 @@ export default function TurboTimeoutuuu() {
     return (
         <div>
             <h2>{message}</h2>
-            <button onClick={() => setDelay(500)}>Change delay to 0.5s</button>
-            <button onClick={() => setDelay(null)}>Cancel timeout</button>
-            <button onClick={() => setDelay(1000)}>Reset to 1s</button>
+            <Stack spacing={1} direction="row">
+                <Button variant="outlined" size="small" onClick={() => setDelay(500)}>Change delay to 0.5s</Button>
+                <Button variant="outlined" size="small" onClick={() => setDelay(null)}>Cancel timeout</Button>
+                <Button variant="outlined" size="small" onClick={() => setDelay(1000)}>Reset to 1s</Button>
+            </Stack>
             <hr/>
         </div>
     );
