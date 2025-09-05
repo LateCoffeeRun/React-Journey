@@ -29,5 +29,3 @@ This is mainly my personal learning space, but if you have suggestions, ideas, o
 🔹Explore ecosystem tools (React Router, Redux, Zustand, etc.)  
 🔹Improve component design skills  
 🔹Practice project structure & best practices
-
-testing branch rules
